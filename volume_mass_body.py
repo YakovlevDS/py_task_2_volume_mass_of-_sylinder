@@ -14,6 +14,12 @@ def volume():
     h=height()
     s=PI*r**2
     v=s*h
-    return v   
+    return v 
 
-print('Volume of cylinder: ',volume(),'centimeter сubic')
+def massa(g):
+    n=float(input('Specific gravity cylinder in gramm/centimeter сubic: '))
+    return g*n/1000 
+
+v= volume()
+print('Volume of cylinder: ',v,'centimeter сubic')
+print('Massa of cylinder: ',massa(v),'centimeter сubic')
